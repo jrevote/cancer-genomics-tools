@@ -1,6 +1,6 @@
 class Tabix < FPM::Cookery::Recipe
   description 'Tabix indexes a TAB-delimited genome position file in.tab.bgz and creates an index file ( in.tab.bgz.tbi or in.tab.bgz.csi ) when region is absent from the command-line. '
-  name 'delly'
+  name 'tabix'
   version '0.2.6'
   revision 0
   homepage 'http://sourceforge.net/projects/samtools/files/tabix/'
