@@ -19,11 +19,10 @@ class RBase < FPM::Cookery::Recipe
     # Create R libraries install file.
     File.open('additional.R', 'w', 0755) do |f|
       f.write <<-__EOF
-source("http://bioconductor.org/biocLite.R")
-biocLite("DESeq2")
-biocLite("edgeR")
-biocLite("cummeRbund")
-install.packages(pkgs="gplots",repos="http://cran.csiro.au/")
+install.packages("ggplot2",repos="http://cran.csiro.au/")
+install.packages("reshape2",repos="http://cran.csiro.au/")
+install.packages("scales",repos="http://cran.csiro.au/")
+install.packages("circlize",repos="http://cran.csiro.au/")
       __EOF
     end
 
